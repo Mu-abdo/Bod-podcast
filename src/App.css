@@ -1,0 +1,41 @@
+:root{
+  --bg-primary: #eb5c2c;
+}
+section{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+body{direction: rtl; background: #f6f4ee;}
+.App {
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+nav ul li {
+  margin: 0;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+section {
+  padding: 50px;
+}
+.btn-login{
+  background: var(--bg-primary);
+}
+.panner-card{
+  background: #EFEDE8;
+}
+.user-name .name{color: var(--bg-primary);}
+.users-active{font-size: 11px;}
+.footer .logo-web {
+  filter: brightness(10);
+}
