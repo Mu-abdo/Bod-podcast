@@ -3,7 +3,7 @@ import React from "react";
 function ArticalsBlog(props){
     return(
         <>
-            <div className="img-box h-full md:w-1/3">
+            <div className="img-box h-48 w-48 md:w-1/3">
                 <img
                     src={props.img}
                     alt="img-panner"

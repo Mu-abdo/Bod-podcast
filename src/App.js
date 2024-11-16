@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
-import Exportations from './Pages/Exportations';
+import Version from './Pages/Version';
 import Pod from './Pages/Pod';
 import Video from './Pages/Video';
 import Blog from './Pages/Blog';
@@ -26,7 +26,7 @@ function App() {
         <div className="mx-auto">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/Exportations" element={<Exportations />} />
+            <Route path="/Version" element={<Version />} />
             <Route path="/pod" element={<Pod />} />
             <Route path="/Video" element={<Video />} />
             <Route path="/Blog" element={<Blog />} />

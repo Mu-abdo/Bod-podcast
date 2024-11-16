@@ -3,7 +3,7 @@ import HeroSection from "./Component/HeroSection";
 import ArticalsBlog from "./Component/Articals";
 import Episodes from "./Component/Episodes";
 import ImgPodcastEp from "./Component/ImgPodcastEp";
-import Version from "./Component/Version";
+import Version from "./Component/ImgVersion";
 import Videos from "./Component/Videos";
 import imgarticle from "./images/imgarticle.jpg";
 import imgPanner from "./images/200.jpg";

@@ -37,11 +37,11 @@ function Navbar() {
 
             <li>
               <Link 
-                to="/Exportations" 
+                to="/Version" 
                 className="text-black hover:text-white hover:bg-black px-3 rounded-md text-sm font-medium"
               >
                 <i className="fas fa-book ml-2"></i>
-                <span>التصدير</span>
+                <span>ااااالتصدير</span>
               </Link>
             </li>
 

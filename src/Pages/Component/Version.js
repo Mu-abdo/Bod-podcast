@@ -1,11 +1,22 @@
 import React from "react";
 
-function Version(props){
+function VersionComponents(props){
     return(
-        <div className="flex-1 rounded-lg overflow-hidden h-52 cursor-pointer">
-            <img src={props.img} alt="img-version" className="md:w-full"/>
-        </div>
+        <>
+            <div className="mb-6 flex items-center font-bold text-xl">
+                <i className="fas fa-book ml-2"></i>
+                <h2 className="w-full text-right">إصدارات حقق</h2>
+            </div>
+            <div className="">
+                <div className="img-hero-version">
+                    <img src={props.imgVersionPage} alt="صور الاصدارات"/>
+                </div>
+                <div className="data-hero-version">
+
+                </div>
+            </div>
+        </>
     )
 }
 
-export default Version;
+export default VersionComponents;
