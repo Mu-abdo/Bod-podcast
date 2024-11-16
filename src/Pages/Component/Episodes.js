@@ -4,7 +4,7 @@ function Episodes(props){
   return(
     <div className="box-sm flex items-center text-right mb-4">
       <div className="img-box md:w-1/3">
-          <img src={props.img} alt="img-panner" className="h-auto rounded-lg" />
+          <img src={props.img} alt="img-panner" className="h-auto rounded-lg w-48 h-48 object-cover" />
       </div>
       <div className="data-panner flex-1 mr-4 ml-6 md:w-2/3">
           <h2 className="text-sm font-bold">{props.epTitle}</h2>
