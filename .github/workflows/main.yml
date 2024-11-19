@@ -1,0 +1,40 @@
+on:
+  push:
+    branches:
+      - master
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: bod.com.sa
+        username: podcast@pod.bod.com.sa
+        password: ${{ secrets.ftp_secret }}
+        dry-run: false
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/public/images/**
+          **/public/attachments/**
+          **/public/uploads/**
+          **/.idea/**
+          **/.well-known/**
+          **/chat.lothgha.com/**
+          **/dev-testing.lothgha.com/**
+          **/lothgha.com/**
+          **/omar.lothgha.com/**
+          **/specialist.lothgha.com/**
+          .ftpquota
+          config.php
+          error_log
+          fileToExclude.txt
+
+
